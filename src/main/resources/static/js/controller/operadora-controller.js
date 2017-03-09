@@ -35,8 +35,8 @@ angular.module("appContato").controller("operadoraCtrl", function($scope, $http)
 				$scope.operadora.index = $scope.operadoras.indexOf(operadora);
 			};
 
-			$scope.alterar=function(operadora){
-				$scope.operadoras[$scope.operadora.index] = operadora;
+			$scope.alterar=function(){
+				$scope.operadoras[$scope.operadora.index] = $scope.operadora;
 				$scope.operadora={};
 				$scope.message="Alteração realizada com sucesso!";
 				$scope.show_lterar = false;

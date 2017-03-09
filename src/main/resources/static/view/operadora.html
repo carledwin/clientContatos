@@ -28,9 +28,11 @@
 		<hr />
 		<input type="text" ng-disabled="true" ng-model="operadora.id" class="form-control" placeholder="Código" />
 		<input type="text" ng-model="operadora.descricao" class="form-control" placeholder="Descrição" />
-		<input type="email" ng-model="operadora.codigo" class="form-control" placeholder="Código operadora" />
+		<input type="text" ng-model="operadora.codigo" class="form-control" placeholder="Código operadora" />
+		
+		
 		<button ng-click="adicionar()" ng-show="!show_lterar" class="btn btn-primary btn-block">Adiconar</button>
-		<button ng-click="alterar(operadora)" ng-show="show_lterar" class="btn btn-primary btn-block">Alterar</button> 
+		<button ng-click="alterar()" ng-show="show_lterar" class="btn btn-primary btn-block">Alterar</button> 
 		<div class="alert alert-success" ng-show="message != ''" role="alert">{{message}}</div>
 	</div>
 </html>
