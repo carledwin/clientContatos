@@ -1,4 +1,4 @@
-angular.module("appContato").controller("contatosCtrl", function($scope, $http){
+angular.module("appContato").controller("contatoCtrl", function($scope, $http){
 			$scope.message='';
 			$scope.contato={};
 			$scope.show_lterar=false;
@@ -8,7 +8,7 @@ angular.module("appContato").controller("contatosCtrl", function($scope, $http){
 			$scope.funcionalidade="Contatos";
 			
 			function carregarContatos(){
-				$http({method:"GET", url:"http://localhost:8080/"})
+				$http({method:"GET", url:"http://localhost:8080/contatos"})
 					.then(function(response){
 							$scope.contatos = response.data;
 						}, 

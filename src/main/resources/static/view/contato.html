@@ -1,13 +1,17 @@
-<div ng-controller="contatoCtrl">
+<html>
+<head>
+	<meta charset="UTF-8" />
+</head>
+<div class="jumbotron" ng-controller="contatoCtrl">
 <table class="table table-striped">
 			<tr>
-				<th>Código</th>
+				<th>CÃ³digo</th>
 				<th>Nome</th>
 				<th>Telefone</th>
 				<th>Email</th>
 				<th>Estado</th>
 				<th>Operadora</th>
-				<th>Ações</th>
+				<th>AÃ§Ãµes</th>
 			</tr>
 			<tr ng-repeat="contato in contatos">
 				<td>{{contato.id}}</td>
@@ -37,3 +41,4 @@
 	<button ng-click="alterar(contato)" ng-show="show_lterar" class="btn btn-primary btn-block">Alterar</button> 
 	<div class="alert alert-success" ng-show="message != ''" role="alert">{{message}}</div>
 </div>
+</html>

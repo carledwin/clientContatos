@@ -4,7 +4,7 @@ appContato.config(
 		function($routeProvider, $locationProvider){
 	$routeProvider
 	.when('/contato',{templateUrl:'view/contato.html', controller:'contatoCtrl'})
-	.when('/endereco',{templateUrl:'view/estado.html', controller:'estadoCtrl'})
+	.when('/estado',{templateUrl:'view/estado.html', controller:'estadoCtrl'})
 	.when('/operadora',{templateUrl:'view/operadora.html', controller:'operadoraCtrl'})
 	.otherwise({redirectTo:'/'});
 	
